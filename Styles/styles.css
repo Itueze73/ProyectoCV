@@ -3,7 +3,7 @@
 }
 
 .color{
-    color: red;
+    color: blue;
 }
 
 .txt{
@@ -12,10 +12,14 @@
 
 body{
     color: black;
-    background-color: burlywood;
+    background-image: url(/img/fondo.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .nav{
     color: black;
-    background-color: grey;
+    /*background-color: dodgerblue;*/
+    
 }

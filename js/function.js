@@ -1,16 +1,15 @@
 
-
-
-const persona = '{"nombre":"Ezequiel", "edad":"34", "nacionalidad":"argentino"}';
-                const obj = JSON.parse(persona);
-                console.log(obj);
-                document.getElementById("demo").innerHTML = 
-                "nombre: "+obj.nombre+
-                "Edad: "+obj.edad+
-                "Nacionalidad: "+obj.nacionalidad;
-
-
-            
+async function obtenerDatos(){
+    const persona = await fetch("http://127.0.0.1:5500//json/datos.json");
+    const obj = await persona.json()
+    console.log(obj);
+    document.getElementById("Nombre").innerHTML = "Nombre y Apellido: "+obj.nombre;
+    document.getElementById("Edad").innerHTML = "Edad: "+obj.edad;
+    document.getElementById("Nacionalidad").innerHTML = "Nacionalidad: "+obj.nacionalidad;
+    document.getElementById("Direccion").innerHTML = "Direccion: "+obj.direccion;
+}
+obtenerDatos();
+        
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("formulario").addEventListener('submit', validarFormulario); 
 });
@@ -30,5 +29,4 @@ function validarFormulario(evento) {
   document.getElementById('enviar').addEventListener('click', function() {
     alert("Su mensaje fue enviado!");
 });
-
 }

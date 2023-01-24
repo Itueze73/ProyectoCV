@@ -1,3 +1,21 @@
 .container{
     margin-top: 3.5rem;
 }
+
+.color{
+    color: red;
+}
+
+.txt{
+    color: chartreuse;
+}
+
+body{
+    color: black;
+    background-color: burlywood;
+}
+
+.nav{
+    color: black;
+    background-color: grey;
+}

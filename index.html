@@ -9,34 +9,118 @@
         rel="stylesheet" 
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
         crossorigin="anonymous">
+        <link rel="stylesheet" href="Styles/styles.css">
+        
 </head>
-<body>
-        <div class="container">
+<body class="body">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light , nav">
+        <div class="container-fluid nav">
+          <a class="navbar-brand" href="#">CV</a>
+          <button class="navbar-toggler" type="button" 
+          data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" aria-expanded="false" 
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse nav" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#ojetivo">Ojetivos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experiencia">Experiencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#estudio">Estudios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#comenter" >Comentarios</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+        <div class="container" >
             <div class="row">
                 <div class="col-8">
-                    <h2>Experiencia Laboral</h2>
+                    <h2 class="txt" id="ojetivo">Objetivos</h2>
+                    <ul class="list-group, body">
+                        <li class="list-group-item">Ingresar al mercado laboral.</li>
+                        <li class="list-group-item">Cumpliar con los estandares del empleador.</li>
+                        <li class="list-group-item">Avanzar dentro de la compania.</li>
+                        <li class="list-group-item">Obtener experiencia laboral.</li>
+                        <li class="list-group-item">Ignovar dentro de la eindustria.</li>
+                      </ul>
+
+                    <hr class="color">
+                    <h2 class="txt" id="experiencia">Experiencia Laboral</h2>
                     <h5>Inspector de medio de transporte</h5>
                     <p>Dentro de las funciones se encuentra verificar que los recorridos se estén cumpliendo al igual que los horarios, también diseña los horarios en base a la demanda, controla las paradas, las garitas y el estado de las calles.</p>
+                    <hr class="color">
                     <h5>Empleado Administrativo</h5>
                     <p>empleado administrativo, a los fines del presente estatuto, a toda persona que preste servicios en forma regular, mediante retribución pecuniaria, en publicaciones diarias o periódicas, agencias noticiosas, empresas radiotelefónicas, cinematográficas, fílmicas o de televisión, que propalen, exhiban o televisen informativos o noticias de carácter periodístico, únicamente con respecto al personal ocupado en estas tareas.
-
                        Comprende al personal que cumple funciones en los siguientes departamentos o secciones: publicidad o avisos, contaduría, circulación, expedición e intendencia.</p>
-                </div>
+                       <hr class="color">
+                       <h2 class="txt" id="estudio">Estudios Academicos</h2>
+                       <h5>Secundario Completo</h5>
+                       <p>E.E.M. N* 42 La Salle</p>
+                       <hr class="color">
+                       <h5>Armado y Reparacion de Pc</h5>
+                       <p>Instituto Moron</p>  
+                      
+                    </div>
+
                 <div class="col-4">
-                        <img src="/img/IMG_2128.JPEG" class="img-thumbnail" alt="rostro de perfil">
+                        <img src="/img/yo.JPEG" class="img-thumbnail" width="150px" height="150px" alt="rostro de perfil">
                         <h2>Apelledo y Nombre: Iturriaga Ezequiel</h2>
                         <h5>Direccion : Av. Siempreviva N*742, Springfield</h5>
                         <h5>Telefono: +540111540844185</h5>
+                        <h5>Redes sociales</h5>
+                        <a href="https://twitter.com/?lang=es"><img margin="0px" width="30px" height="30px" src="/img/twiterr.png" class="rounded float-start" alt="Pajarito de Twitter"> Twitter</a>
+                        <br>
+                        <br>
+                        <a href="https://www.instagram.com/"><img margin="0px" width="30px" height="30px"src="/img/istamgram.jpeg" class="rounded float-start" alt="Camara de instagram"> Instagram</a>
+                        <br>
+                        <br>
+                        <h5>Proyectos</h5>
+                        <a href="https://github.com/"><img width="30px" height="30px" src="/img/git.png" class="rounded float-start" alt="Gato de Git">  Github</a>
                     </div>
 
             </div>
+            <P id="demo">
 
+            </P>
+        
+            
         </div>
-    
+        <hr class="color">
+        <footer id="comenter" >
+            <form id="formulario" action="#">
+                <div class="mb-3">
+                    <h3 class="txt">Dejame tus comentarios</h3>
+                  <label for="exampleInputEmail1" class="form-label" >Correo</label>
+                  <input type="email" class="form-text"  aria-describedby="emailHelp" name="email" id="email" required>
+                  <div id="emailHelp" class="form-text">Jamas se compartira tu informacion.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="floatingTextarea">Comentarios</label>
+                    <textarea type="text" class="form-text" placeholder="Por favor no dejes de comentar." name="comentario" id="comentario" required></textarea>   
+                </div>
+                <div>
+                <button type="submit" id="enviar" class="btn btn-primary" value="Entrar">Enviar</button>
+              </div>
+            </form>
+        </footer>
+    <script src="/js/function.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+    crossorigin="anonymous" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" 
     crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" 
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" 
+    crossorigin="anonymous"></script>
 </body>
 </html>
